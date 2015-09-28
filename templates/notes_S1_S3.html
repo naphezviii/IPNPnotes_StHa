@@ -1,0 +1,465 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- main body-->
+  </div>
+    <div class="box" > <!-- B1 5 ways-->
+      <h2 id="box-1">Five way of thinking<br>
+        like a programmer:</h2> 
+        <div class="concept-description" id="box-1-1"> <!-- no concept or concept-title class as it is box.class to highlight special information-->
+        <ol>
+        <li>Procedural thinking: creating perfectly clear and unambiguous instructions (sequential thinking)</li>
+        <li>Abstract thinking: finding generality (=&gt; abstractions) to avoid unnecessary repetition</li>
+        <li>Systematic debugging: following a structured process to find the mistakes (bugs)</li>
+        <li>Technological empathy: being aware that computers are powerful tools and at the same time stupid (no room for ambiguity)</li>
+        <li>Systems thinking: breaking a big problem down into smaller components</li>
+        </ol>
+        </div>
+    </div>
+    <div class="lesson" > <!-- L1 -->
+      <h2 id="lesson-1">Lesson 1:<br>
+        Key aspects of the world wide web</h2>
+        <div class="concept">
+          <div class="concept-title" id="lesson-1-1">
+          <h3 >World Wide Web</h3>
+          </div>
+          <div class="concept-description">
+            <p>
+          World Wide Web is a collection of <b>H</b>yper<b>t</b>ext <b>M</b> arkup <b>L</b>anguage
+          <!-- to use 'span and bold class' here seem overkill Pls advise -->
+          (HTML) documents that are stored on large computers called <span class="italic">servers</span>. These documents have two parts: first the meta data such as title of the pages and other elements like <span class="italic">Cascading Style Sheets</span> (CSS) and then the actual content of the page.
+          <br>
+          To access a document (a webpage) you have to use a <span class="italic">web browser</span> on a computer that sends a <span class="italic">HTTP request</span> to a specific server which serves the document back to your terminal.
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-1-2">
+          <h3>Hypertext Markup Language (HTML)</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          The HTML determines the content (text) and the way it looks (markup). It can reference other content (images and video) as well as links to other HTML pages. These are <span class="italic">HTML attributes</span>.
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-1-3">
+          <h3>Elements</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          A HTML page consists of <span class="italic">elements</span>. They are the building blocks: content bracketed with so called <span class="italic">tags</span>. It is not necessary to know all the tags. A good resource can be found <a href ="http://www.w3schools.com/html/default.asp">here</a>.
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-1-4">
+          <h3>Span and div</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          It is important to note that some <span class="italic">elements</span> are either <span class="italic">inline</span> or <span class="italic">block</span>. This means they either flow with the text or have a hight and width that can be assigned around the content (invisible boxes).
+          </p>
+          </div>
+        </div>
+    </div>
+    <div class="lesson" > <!-- L2 -->
+      <h2 id="lesson-2">Lesson 2: <br>Webpages, documents, and structure
+      </h2>
+        <div class="concept">
+          <div class="concept-title" id="lesson-2-1">
+          <h3>Developer Tools</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          Developer tools for instance in Chrome (menu top right) allow to inspect the structure and elements (indicated with triangles) of the a webpage: (1) to view the visible as well as the invisible elements; (2) to inspect the dimensions; and (3) their style (CSS).
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-2-2">
+          <h3>Tree structure: Document object model (DOM)</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          HTML pages are structured like an outline (tree-like structure). HTML elements can include other elements. So the more indented the element  is the deeper nested it is. <br>
+          This in turn means the structure is a series of nested boxes. Visually the tree structure is boxes in boxes, in boxes.
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-2-3">
+          <h3>Classes</h3>
+          </div>  
+          <div class="concept-description">
+          <p>
+          These boxes have 'labels' so called <span class="italic">class attributes</span>. Like other attributes a class is defined with a value.
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-2-4">
+          <h3>Code Writing Tools</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          There are three key tools that differ in speed of feedback, ease of use, level of power,and the number of programming languages they can handle.
+          </p>
+            <dl>
+              <dt><a href="http://scratchpad.io">Scratchpad</a></dt>
+              <dd>easy to use (HTML &amp; CSS) with immediate feedback, great for beginners or quick sketches, no option to share</dd>
+              <dt><a href="http://codepen.io">Codepen</a></dt>
+              <dd>fewer beginner features slightly delayed feedback, easy to share (account needed), powerful editor for HTML, CSS and Javascript</dd>
+              <dt><a href="http://www.sublimetext.com/">Sublime</a></dt>
+              <dd>more difficult to use, feedback on refresh, complicated to share, very  powerful editor for all programming languages</dd>
+            </dl>
+            <p>The recommendation is to start with Scratchpad and to share with Codepen, later with Sublime
+          </p>
+          </div>
+        </div>
+    </div>
+    <div class="lesson" > <!-- L3 -->
+        <h2 id="lesson-3">Lesson 3: <br>Style, selectors, and boxes</h2>
+        <div class="concept">
+          <div class="concept-title" id="lesson-3-1">
+          <h3>Cascading Style Sheets (CSS)</h3>
+          </div>   
+          <div class="concept-description">
+          <p>
+          CSS identifies (<span class="italic">matches</span>) a class or a tag of an element, and then determines what to do with it, or what property values to change. This is akin to a find and replace tool. The order (place and sequence of the rules) and specificity are important.
+          </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-3-2">
+          <h3>Order</h3>
+          </div>
+          <div class="concept-description">
+            A subsequent definition overwrites the previous one:
+             <ol>
+                <li>browser&rsquo;s the default style (differs from browsers to browser)</li>
+                <li>separate stylesheet file (recommended)</li>
+                <li>stylesheet inside the header of a HTML document (only for small projects)</li>
+                <li>inline style in an element (not recommended)</li>
+            </ol>
+            <!-- initally I had enclode the above in paragraph tag but go an error. not sure why-->
+          </div>
+        </div>  
+        <div class="concept">
+          <div class="concept-title" id="lesson-3-3">
+          <h3>Specificity</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          Rules affect all of an elements&rsquo; child elements, not only the elements they directly match (= <span class="italic">cascading</span>). If several, overlapping rules define a child element, the more specific rule applies. See <span class="italic"><a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">
+          inheritance</a></span> and note that text-related properties are inherited, box-related properties not.
+          </p>
+        </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-3-4">
+          <h3>Selectors</h3>
+          </div>
+            <div class="concept-description">
+              <ol>
+                <li>ID selectors (most powerful in terms of specificity: #selector</li>
+                <li>Class selectors (most useful and versatile): .class-name</li>
+                <li>Tag selectors (most useful when changing properties unique to tan element): e.g. h2</li>
+                <li>Attribute selectors (even more useful than classes because they have the same specificity value, but can be any attribute not just class, plus they can have a value you can select by): e.g. [data-modal="open"] </li>
+              </ol>
+              Selectors can be combined together. A webpage covering all the selectors and properties can be found <a href="https://css-tricks.com/almanac/">here</a>
+               <!-- initally I had enclode the above in paragraph tag but go an error. not sure why-->
+            </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-3-5">
+          <h3>Box Sizing</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+            HTML elements are boxes and each box has 4 components: content, padding, border and margin. Either set sizes in terms of percentages rather than pixels or set the box-sizing attribute to border-box for every element. <br>
+            NB: Different browsers display the same code differently.
+            </p> 
+            <div class="image">
+              <img src="http://assignments.udacity-extras.appspot.com/courses/html-css/img/box-model.png" alt="Box Model">
+            </div>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title" id="lesson-3-6">
+          <h3>Box Positioning</h3>
+          </div>
+          <div class="concept-description">
+          <p>
+          Divs&mdash;as block elements (as opposed to inline)&mdash;use by default the entire page width. The rule &lsquo;display: flex;&rsquo; lets divs appear next to each other. See <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">this article</a> for more details.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div> <!--change-->
+    </div>
+    <div class="box" >  <!-- B2 best practice -->
+      <h2  id="box-2">Best practice: <br>Code, test, refine, and verify</h2>
+      <div class="concept-description" id="box-2-1">  
+      <!-- no concept or concept-title class as it is box.class to highlight special information-->
+      <ol>
+        <li>Look for natural boxes in the proposed design</li>
+        <li>Look for repeat styles and semantic elements</li>
+        <li>Write the HTML</li>
+        <li>Apply styles from biggest to smallest</li>
+        <li>Fix things (used the browser dev tools to quickly test before executing in HTML)</li>
+        <li>Verifying <a href="http://validator.w3.org/#validate_by_input">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a></li>
+      </ol>
+      </div>
+    </div>
+    <!-- below is N E W ..... TODO Should be become new chapter or even page: Important Concepts - Telling Computers What to Do-->
+    <div class="lesson" >  <!--L4 -->
+      <h2 id="lesson-4">Lesson 4: <br>Introduction to 'Serious' Programming</h2>
+      <div class="concept">
+          <div class="concept-title" id="lesson-4-1">
+              <h3>Computer</h3>
+          </div>
+          <div class="concept-description">
+            <p>A computer can be programmed to do anything we want, as long as we can write a program that specifies a specific sequence of instructions.</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-4-2">
+              <h3>Computer Program</h3>
+          </div>
+          <div class="concept-description">
+              <p>A program is a precise sequence of steps that a computer can follow to do something useful. Web browsers, games, mobile apps, and simple print statements are all examples of computer programs.</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-4-3">
+              <h3>Programming Language</h3>
+          </div>
+          <div class="concept-description">
+              <p>A programming language is what programmers use to tell a computer what to do. Python is one example of a programming language.</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-4-4">
+              <h3>Python</h3>
+          </div>
+          <div class="concept-description">
+              <p>Python is a programming language. When you write Python code and press "Run", a Python Interpreter converts the code you wrote as a set of instructions that the computer itself can understand and execute.</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-4-5">
+              <h3>Grammar</h3>
+          </div>
+          <div class="concept-description">
+              <p>Just like human languages have grammars, programming languages do too. A grammar is a specification of what is correct and what is incorrect. NB: Computers are not smart enough to make sense of sentences that are not correct. So code has to be exactly correct according to the Python interpreter, otherwise it will not run.</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-4-6">
+              <h3>Python Expressions</h3>
+          </div>
+          <div class="concept-description">
+              <p>A Python "expression" is a legal Python statement. For example: print 1 + 1 is a valid expression, but print 1 + (without a number at the end) is not.</p>
+          </div>
+      </div>
+    </div>  
+    <div class="lesson" >  <!--L5 -->
+      <h2 id="lesson-5">Lesson 5: <br>Variables and Strings</h2>
+      <div class="concept">
+          <div class="concept-title" id="lesson-5-1">
+              <h3>Variable in Python</h3>
+              </div>
+              <div class="concept-description">
+                  <p>Variables give programmers a way to give names to values. A values is assigned to a variable with the equal sign "=" (takes the value of). To use the equal sign like in mathematics two equal sign need to be used "==" (is the same as). The value of a variable can be re-assigning with different value later. Variables are useful, because they (1) improve code readability by using names (2) store the value of important data (2) change the value of something</p>
+              </div>
+          </div>
+      <div class="concept">
+            <div class="concept-title" id="lesson-5-2">
+                <h3>String</h3>
+            </div>
+            <div class="concept-description">
+                <p>A string is a linear sequence of characters, words, or other data. It is enclosed in single (' ') or double (" ") quotation mark. NB: numbers become text in an string.</p>
+            </div>
+      </div>
+    </div>
+    <div class="lesson" >  <!--L6 -->
+      <h2 id="lesson-6">Lesson 6: <br>Input -> Function -> Output</h2>
+      <div class="concept">
+        <div class="concept-title" id="lesson-6-1">
+            <h3>Function (aka procedures)</h3>
+        </div>
+        <div class="concept-description">
+            <p>A function is something that takes input, does something to that input, and then produces output.</p>
+      </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-6-2">
+              <h3>Making and using a function</h3>
+          </div>
+          <div class="concept-description">
+              <p>Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called). In the "body" of the function, we write the code that specifies what to do with the input parameters. For example the following code could be the definition of a function called square: def square(x): answer = x * x return answer To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses. Like this: print square(4) >>>16</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-6-3">
+              <h3>How do functions help programmers avoid repetition?</h3>
+          </div>
+          <div class="concept-description">
+              <p>Functions are tools that programmers can create and reuse forever! Once you have defined a function once, you never have to define it again.</p>
+          </div>
+      </div>
+      <div class="concept">
+          <div class="concept-title" id="lesson-6-4">
+              <h3>What happens if a function does not have a return statement?</h3>
+          </div>
+          <div class="concept-description">
+              <p>The return keyword tells Python exactly what the function should produce as output. If a function does not have a return statement, then you will get behavior like this: def add_two(x): answer = x + 2 new_number = add_two(7) print new_number >>>None</p>
+          </div>
+      </div>
+      <div class="concept">
+      <div class="concept-title" id="lesson-6-5">
+          <h3>cont.</h3>
+      </div>
+      <div class="concept-description">
+          <p>to be expanded and properly formated</p>
+      </div>
+    </div>
+  </div>
+    <div class="box" >  <!-- B3 debugging -->
+      <h2  id="box-3">Debugging <br>5 Strategies</h2>
+      <div class="concept-description" id="box-3-1">  
+      <!-- no concept or concept-title class as it is box.class to highlight special information-->
+      <ol>
+        <li><b>Examine error messages when programs crash:</b> The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem happened.</li>
+        <li><b>Work from example code:</b> If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.</li>
+        <li><b>Make sure examples work:</b> Just because you find example code doesn't mean it will work. Check the example code you're using to make sure it behaves the way you expect.</li>
+        <li><b>Check (print) intermediate results:</b> When your code doesn't crash but isn't behaving as expected, add print statements to your program to see where in the code things stop behaving correctly.</li>
+        <li><b>Keep and compare old versions:</b> When you have a working version of your code, save it before you add to it. This will give you something to go back to if you introduce too many new bugs.</li>
+      </ol>
+      </div>
+    </div>
+    </div>  
+    </div>
+    </div>
+  <div class="lesson" >  <!--L7 -->
+      <h2 id="lesson-7">Lesson 7: <br>Automation</h2>
+        <div>
+              <div class="concept">
+      <div class="concept-title" id="lesson-7-1">
+        <h3>Abstraction</h3>
+    </div>
+      <div class="concept-description"><p>
+        Abstraction in programming means finding generality to avoid unnecessary repetition. In addition to abstraction, the other key features are encapsulation, inheritance (see below) and polymorphism. See <a href="http://pankajtiwarii.blogspot.sg/p/oops-abstraction-encapsulation.html">here</a> for a detailed explanation.<br>
+        <br> 
+        Python uses the power of object-oriented programming to do that through for instance modules and classes. This is particularly useful for large programming project. The three pillars of this power are modularity, extensibility, and reusability. This also improves not only software building but also maintainability. Other advantages are faster, cheaper and more efficient development due to the modularity and reusability of the rich libraries of objects, and reusable code developed during projects in future projects.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-2">
+        <h3>Object-oriented programming (OOP) </h3>
+    </div>
+      <div class="concept-description"><p>
+        OOP is a programming paradigm based on the concept of ‘objects’. This means there is a construct in Python called a class that structures programs in a way that adds consistency to programs, because they are ‘re-usable’. A class is like blue print or mould that are used to create a multitude of objects or better instances.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-3">
+        <h3>Object </h3>
+    </div>
+      <div class="concept-description"><p>
+        A class tells Python to make a new ‘cast’. Object can have two meanings: the most basic type of cast, and any instance of a cast. Shaw (‘Learn Python the Hard Way’) proposes ‘Is-A’ and ‘Has-A’ to distinguish objects and classes. See <a href="http://learnpythonthehardway.org/book/ex42.html">this article</a> for more details. </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-4">
+          <div class="image">
+              <img src="http://s23.postimg.org/tlvgsbiqz/Screen_Shot_2014_04_18_at_4_52_12_PM.png" alt="Terminology for object elements"> 
+            </div>
+    </div>
+      <div class="concept-description"><p>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-5">
+        <h3>Class <span class="code">[class ClassName:]</span></h3>
+    </div>
+      <div class="concept-description"><p>
+        A class is a way to take a grouping of functions and data and place them inside a container so you can access them with the . (dot) operator. Use def to define a function inside a class. Inside the function in a class, self is a variable for the instance/object being accessed. With ‘ __init__()’ it is initialised and procedure creates space in memory. As mentioned before when a class is instantiated,  an object is created.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-6">
+        <h3>Class and Instance Variables<span class="code">[var = ‘xxx’ before def] and [self.yyy = yyy]</span></h3>
+    </div>
+      <div class="concept-description"><p>
+        Instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-7">
+        <h3>Inheritance (See <a href="#lesson-3-3">Specificity</a>)</h3>
+    </div>
+      <div class="concept-description"><p>
+        One class can inherit traits from another class, much like children form their parents (See CSS Inheritance). This mechanism allows multiple base classes. A derived class can override any methods (method overriding below) of its base class or classes, and a method can call the method of a base class with the same name.<br>Similar to CCS where a class can be applied to multiple part of the HTML code, a class in OOP can create multiple objects in various parts of the code. These are then called instances.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-8">
+        <h3>Instance</h3>
+    </div>
+      <div class="concept-description"><p>
+        An instance is the result when a program calls a class (See also OPP and Object above). In other words classes create objects and specific objects are called instance. So a class is ‘just’ a blueprint which creates objects. An object is an instance of a class - it's a concrete 'thing' that was made using a specific class. In a way, 'object' and 'instance' are the same thing, but the word 'instance' indicates the relationship of an object to its class.<br>
+        <br>
+        'In short, an object is a software bundle of related state and behavior. A class is a blueprint or prototype from which objects are created. An instance is a single and unique unit of a class. … [So] An instance is a unique copy of a Class that [is] representing an Object.' — Source: <a href="https://alfredjava.wordpress.com/2008/07/08/class-vs-object-vs-instance/">Alfred’s Computing Weblog</a></p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-9">
+        <h3>Method</h3>
+    </div>
+      <div class="concept-description"><p>
+        A function which is defined inside a class body. If called as an attribute of an instance of that class, the method will get the instance object as its first argument (which is usually called self). </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-10">
+        <h3>Method overriding</h3>
+    </div>
+      <div class="concept-description"><p>
+        A child class overrides a method of a parent class.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-11">
+        <h3>Module</h3>
+    </div>
+      <div class="concept-description"><p>
+        A module is Python file with some functions or variables in it that need to be imported. The functions or variables in that module are accessed with the <span class="code">.(dot) </span>operator.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-12">
+        <h3>Library</h3>
+    </div>
+      <div class="concept-description"><p>
+        Python’s standard library contains built-in modules that provide access to system functionality as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title" id="lesson-7-13">
+        <h3>Lists and Arrays</h3>
+    </div>
+      <div class="concept-description"><p>
+        Python Notes: Lists vs. Arrays. See <a href="http://www.wired.com/2011/08/python-notes-lists-vs-arrays/">this article</a> and <a href="http://pages.physics.cornell.edu/~myers/teaching/ComputationalMethods/python/arrays.html">scipy array tip sheet</a> for more details. </p>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+</div>
+
+{% endblock %}

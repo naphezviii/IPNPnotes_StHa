@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<title>Nanodegree &mdash; Learn to Code</title>
+  		<link rel="stylesheet" type="text/css" href="static/main.css">
+	</head>
+
+	<body>
+		<div>
+  			<h1>Nanodegree &mdash; Learn to Code</h1>
+  		<div>
+  			<div class="box2"> 
+				<ul>
+					<li><a href="/">Table of Contents</a></li>
+					<li><a href="/notes_S1_S3">Lessons Stage 1 to 3</a></li>
+					<li><a href="/notes_S4_S5">Lessons Stage 4 [to 5]</a></li>
+					<li><a href="/comments">Comments</a></li>
+				</ul>
+		</div>
+		{% block lesson%}
+			{% block content%}
+				{% block comments%}
+				{% endblock %}
+			{% endblock %}
+		{% endblock %}
+		<div class="footer">
+		{% block footer %}
+		<div class="box">
+	        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	        <img class="w3css" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+		    </a>
+	    </div>
+		{% endblock %}
+</div>
+	</body>
+</html>
+{% endautoescape %}

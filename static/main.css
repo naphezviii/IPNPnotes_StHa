@@ -1,0 +1,196 @@
+body {
+ 	background: #999999;
+	padding: 0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+	font-size: 1em;
+	line-height: 1.4em;
+}  
+
+h1 {
+	max-width: 70%;
+	margin: 50px auto; 
+	text-align: left;
+	color: white;
+}
+
+h2 {
+	margin: 0px;
+	padding-bottom: 1em;
+	color: #999999;
+}
+
+h3 {
+	margin: 0px;
+	padding-bottom: 1em;
+	color: #351C1C;
+}
+
+p {
+	margin: 0px 0;
+	color: black;
+}
+
+a {
+	color: #E2E2E2;
+}
+
+ol {
+    padding-left: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+/*li {
+	font-size: 1.2em;
+	line-height: 1.2em; 
+}*/            
+
+img {
+	width: 90%;
+	padding: 20px;
+	padding-left: 0px;
+	max-width: 70%;
+
+
+	/*position: absolute;
+    clip: rect(100px,100px,100px, 100px); */
+    /* This didn't work. I wanted to clip the top of the image 
+    in order to get rid of the headline in the image */
+}
+
+/* Intorducing below .container & .item class the plan was to use the flex-display 
+in order to put the TOC in a second column as a navigation. 
+I've stop now after serval failed attempts. I understand the principle and 
+kind of got there in Scatchpad but copy pasted into Sublime didn't give the same result. 
+I couldn't find out why. I asassuming this topic is still too advanced. Will revisted later. */
+
+/*.container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.item {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex
+  }
+  */
+
+
+.TOC {
+	max-width: 70%;
+  min-width: 300px;
+	margin: 50px auto; 
+	background-color: #777777;
+	border-radius: 5px;
+    padding: 10px;
+	margin: 10px auto;
+}
+
+.TOC-lesson {
+  font-size: 0.8em;
+	line-height: 1.4em;
+	/*font-weight: bold; TBC */ 
+	letter-spacing: 0.2em;
+    padding-left: 0px;
+
+} 
+
+.lesson {
+  min-width: 50%;
+	max-width: 70%;
+	margin: 50px auto; 
+	background-color: #777777;
+	border-radius: 5px;
+    padding: 3%;
+	margin: 10px auto;
+}
+
+.box {
+  min-width: 50%;
+	max-width: 70%;
+	margin: 50px auto; 
+	background-color: #666666;
+	border-radius: 5px;
+    padding: 3%;
+	margin: 10px auto;
+}
+
+.box2 {
+  min-width: 50%;
+	max-width: 70%;
+	margin: 0px auto;
+}
+
+
+.concept {
+	background-color: #999999;
+	padding: 5px;
+	margin: 10px;	
+    margin-left: 0px;
+	border-radius: 5px;
+	color: black;
+	
+}
+
+.concept-title {
+	font-size: 1.2em;
+	margin: 1%;
+	text-align: left;
+	color: #294860;
+}
+
+.concept-description {
+	margin: 5px;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.code {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.w3css {
+	border:0;
+	width: 88px;
+	max-width: 88px;
+	height:31px;
+    padding: 0px;
+    
+}
+
+/* 
+.bold {
+    font-weight: bold;
+}
+
+span.code {
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: #BBBBBB;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+div.code-block {
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: #DDDDDD;
+    padding: 2px 4px;
+    display: inline-block;
+}
+
+.quote {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+*/

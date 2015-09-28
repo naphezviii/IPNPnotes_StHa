@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block lesson %}
+
+	{% for lesson in lessons %}
+
+	<div class="lesson" >  <!--Ln -->
+	    <h2 id="lesson-8">Lesson 8: <br>{{lesson}}</h2>
+
+	    {% block concept %}
+
+			{% for concept in concepts %}
+			<div class="concept">
+			  <div class="concept-title" id="lesson-8-n"> <!--TODO replace "lesson-n-n" w/ {{ concept[0] }} or %s in next step-->
+			    <h3>{{ concept[0] }}</h3>
+			  </div>
+			  <div class="concept-description">
+			    <p>{{ concept[1] }}</p>
+			  </div>
+			</div>
+			{% endfor %}
+
+		{% endblock %}
+
+	</div>
+
+	{% endfor %}
+
+
+
+{% endblock %}
